@@ -8,7 +8,7 @@ namespace DateDifference
         {
             //Asks user for specific input about specific dates
             Console.WriteLine("This program will give you the number of days between two different dates.");
-            Console.WriteLine("Please enter your date in the form MM/DD/YYYY");
+            Console.WriteLine("Please enter your date in the format MM/DD/YYYY.");
             Console.Write("Please enter your first date: ");
 
             //turns input into DateTime
