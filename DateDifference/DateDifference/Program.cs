@@ -14,7 +14,6 @@ namespace DateDifference
             //turns input into DateTime
             DateTime dateFirst = DateTime.Parse(Console.ReadLine());
 
-            
             Console.Write("Please enter your second date: ");
 
             //turns input into DateTime
