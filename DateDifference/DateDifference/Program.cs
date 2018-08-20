@@ -12,28 +12,22 @@ namespace DateDifference
             Console.Write("Please enter your first date: ");
 
             //turns input into DateTime
-            string date1 = Console.ReadLine();
-            DateTime dateFirst = DateTime.Parse(date1);
+            DateTime dateFirst = DateTime.Parse(Console.ReadLine());
 
             
             Console.Write("Please enter your second date: ");
 
             //turns input into DateTime
-            string date2 = Console.ReadLine();
-            DateTime dateSecond = DateTime.Parse(date2);
+            DateTime dateSecond = DateTime.Parse(Console.ReadLine());
 
             //Subtracts the second date from the first
             TimeSpan days = dateSecond.Subtract(dateFirst);
 
             //Allows for absolute number answer 
             TimeSpan duration = days.Duration();
-
-            //this is when I tried to add in a comma and it didn't work.
-            //string total = duration.TotalDays.ToString();
-            //string totals = string.Format("{0:N}", total);
   
             //Prints the total number of days
-            Console.WriteLine($"The number of days between these dates is : {duration.TotalDays}");
+            Console.WriteLine($"The number of days between these dates is : {duration.TotalDays:N0}");
 
             Console.ReadLine();
 
